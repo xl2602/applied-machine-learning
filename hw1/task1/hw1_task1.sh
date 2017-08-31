@@ -15,26 +15,26 @@ else
 fi
 }
 
-mkdir task1
-cd task1
+mkdir task3
+cd task3
 git init
 
 commit_new_file 1 5
 
-git checkout -b feature HEAD~4
+#git checkout -b feature HEAD~4
 
-commit_new_file 6 8
+#commit_new_file 6 8
 
-git rebase --onto feature master~2 master
-git checkout master@{3}
+#git rebase --onto feature master~2 master
+#git checkout master@{3}
 
-commit_new_file 9
+#commit_new_file 9
 
-git checkout -b debug
+#git checkout -b debug
 
-git rebase --onto debug feature~2 feature~1
-git rebase HEAD debug
-git reset --soft HEAD^
-git commit add 7
-git commit --amend -m "7+9"
+#git rebase --onto debug feature~2 feature~1
+#git rebase HEAD debug
+#git reset --soft HEAD^
+#git commit add 7
+#git commit --amend -m "7+9"
 
